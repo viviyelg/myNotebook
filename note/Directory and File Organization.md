@@ -1,5 +1,7 @@
 # AngularJS [Directory and File Organization](https://docs.angularjs.org/tutorial/step_04) (目录和文件组织)
 
+此文为[AngularJS入门教程第四部分](https://docs.angularjs.org/tutorial/step_04)的翻译，如有错误请指出。
+
 在之前的步骤中，已经看到了怎么使我们的应用模块化和可测试。而与此同样重要的还有使用易于操控代码和快速定位相关功能或应用的块的代码的方式组织我们的代码库。
 
 因此，我们将会解释为什么和如何：
