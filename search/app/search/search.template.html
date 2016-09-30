@@ -1,0 +1,9 @@
+<div class="searchArea">
+	<input type="text" name="productId" ng-model="productId" />
+	<button ng-click="$ctrl.getPrize(productId)">搜索</button>
+</div>
+<div class="result">
+	<p>{{$ctrl.productName}}</p>
+	<p>{{$ctrl.productPrize}}</p>
+	<p>{{$ctrl.message}}</p>
+</div>
