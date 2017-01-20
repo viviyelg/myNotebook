@@ -5,7 +5,7 @@
             minS: 320, //最小屏幕宽度
             maxFs: 100, //最大宽度字体大小
         }
-        defaults.minFs = defaults.maxFs * defaults.minS / defaults.maxFs; //最小宽度时的字体大小
+        defaults.minFs = defaults.maxFs * defaults.minS / defaults.maxS; //最小宽度时的字体大小
         // 按屏幕宽度设置字体大小
         var fs = window.screen.width / defaults.maxS * defaults.maxFs;
 

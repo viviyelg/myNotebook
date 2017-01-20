@@ -14,6 +14,9 @@
 		// 取余
 		var remains=remain=con.scrollHeight%liHeight;
 		function animation(){
+			// while(Math.abs(ul.style.marginTop)<Math.abs(-con.scrollHeight+ul.style.marginTop)){
+			// 	ul.style.marginTop--;
+			// }
 			ul.style.marginTop=(-con.scrollHeight+ul.style.marginTop)+"px";
 			// 复制需要滑出的<li>元素，并把它们按顺序拼接在后面
 			// 自定义高度时,若不等于每个li元素的整数倍，只取整数部分
@@ -22,18 +25,25 @@
 			for(var i=0;i<liNum;i++){
 				var topLi=document.querySelectorAll(".scrollUl li")[0];
 				document.querySelectorAll(".scrollUl li")[0].remove();
+
 				ul.appendChild(topLi);
 			}
 			if(remains==0){
 				return;
 			}
 			if(remains%liHeight!=0){
-				ul.style.marginTop=-remains+"px";
+				while(Math.abs(ul.style.marginTop)<remains){
+					ul.style.marginTop=ul.style.marginTop--;
+				}
+				// ul.style.marginTop=-remains+"px";
 				remains+=remain;
 			}else{
 				var topLi=document.querySelectorAll(".scrollUl li")[0];
 				document.querySelectorAll(".scrollUl li")[0].remove();
-				ul.style.marginTop=0+"px";
+				while(ul.style.marginTop>0){
+					ul.style.marginTop--;
+				}
+				// ul.style.marginTop=0+"px";
 				remains=remain;
 				ul.appendChild(topLi);
 			}
