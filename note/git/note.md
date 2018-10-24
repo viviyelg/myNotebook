@@ -1,4 +1,5 @@
 ## git笔记
+[廖雪峰Git教程](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
 
 ### 创建版本库（repository）
 
@@ -196,3 +197,4 @@ $ git rm test.txt
 - 命令`git push origin --tags`可以推送全部未推送过的本地标签；
 - 命令`git tag -d `可以删除一个本地标签；
 - 命令`git push origin :refs/tags/`可以删除一个远程标签。
+
